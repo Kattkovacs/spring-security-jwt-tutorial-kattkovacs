@@ -39,7 +39,7 @@ public class DataInitializer implements CommandLineRunner {
 
         users.save(VehicleAppUser.builder()
             .username("user")
-            .password(passwordEncoder.encode("password"))
+            .password(passwordEncoder.encode("{password"))
             .roles(Arrays.asList("ROLE_USER"))
             .build()
         );
